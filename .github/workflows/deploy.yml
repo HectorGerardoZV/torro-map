@@ -1,5 +1,5 @@
 name: deploy
-on: [push]
+on: [release]
 jobs:
   build:
     runs-on: [ubuntu-latest, windows-latest, macOS-latest]
