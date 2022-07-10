@@ -10,3 +10,6 @@ export const sub = (a: number, b: number) => {
 export const div = (a: number, b: number) => {
   return a / b;
 };
+export const compare = (a: number, b: number) => {
+  return a === b;
+};

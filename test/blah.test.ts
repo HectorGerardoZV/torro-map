@@ -1,4 +1,4 @@
-import { sum, div, mul, sub } from '../src';
+import { sum, div, mul, sub, compare } from '../src';
 
 describe('blah', () => {
   it('should sum', () => {
@@ -12,5 +12,8 @@ describe('blah', () => {
   });
   it('should div', () => {
     expect(div(10, 2)).toEqual(5);
+  });
+  it('should compare', () => {
+    expect(compare(5, 5)).toEqual(true);
   });
 });
