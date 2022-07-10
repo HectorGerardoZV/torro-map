@@ -1,4 +1,4 @@
-import { sum,div,mul,sub } from '../src';
+import { sum, div, mul, sub } from '../src';
 
 describe('blah', () => {
   it('should sum', () => {
