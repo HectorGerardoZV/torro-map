@@ -18,8 +18,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
-          registry-url: https://registry.npmjs.org/
-
+          
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
 
@@ -31,8 +30,3 @@ jobs:
 
       - name: Build
         run: yarn build
-
-      - name: Deploy 
-        run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
